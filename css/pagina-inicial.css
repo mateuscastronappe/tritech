@@ -1,13 +1,30 @@
-#cadastro {
-width: 80%;
-max-width: 600px;
-height: auto;
-font-size: 20px;
-font-family: Arial, sans-serif;
-font-weight: 600;
-text-align: center;
-margin-top: 200px;
-}
+
  body{
-  background-image: url('../img/oecano.png');
+  background-image: url('../img/oceano.png');
+  background-size: cover; 
+  background-repeat: no-repeat;
 } 
+#cadastro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 50px;
+}
+
+#cadastro form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#cadastro input {
+ margin-bottom: 10px; 
+font-size: 30px;
+}
+.enviar{
+  font-size: 40px;
+}
