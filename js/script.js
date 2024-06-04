@@ -1,10 +1,15 @@
-// document.getElementById("cadastroForm").addEventListener("submit", function(event) {
-//     event.preventDefault(); 
-//     window.location.href = "bem-vindo.html";
-// });
 document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("cadastroForm").addEventListener("submit", function(event) {
+    document.querySelector(".form").addEventListener("submit", function(event) {
         event.preventDefault(); 
-        window.location.href = "bem-vindo.html";
+        
+        var nome = document.getElementById("nome").value.trim();
+        var email = document.getElementById("email").value.trim();
+        
+        if (nome !== "" && email !== "") {
+            window.location.href = "bem-vindo.html";
+        } else {
+            alert("Por favor, preencha todos os campos.");
+        }
     });
 });
+
