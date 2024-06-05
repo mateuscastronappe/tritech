@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/contact.css">
+    <script src="./js/contact.js" defer></script>
     <title>Fale conosco</title>
 </head>
 <body>
+    <div class="container">
+        <form class="form">
+          <div class="descr">Contact us</div>
+          <div class="input">
+              <input required="" autocomplete="off" type="text">
+              <label for="name">Nome</label>
+          </div>
     
+          <div class="input">
+              <input required="" autocomplete="off" name="email" type="text">
+              <label for="email">E-mail</label>
+          </div>
+    
+          <div class="input">
+              <textarea required="" cols="30" rows="1" id="message"></textarea>
+              <label for="message">Mensagem</label>
+          </div>
+          <button>Enviar mensagem→</button>
+        </form>
+    </div>
+    <div id="voltar">
+        <a href="./bem-vindo.html"><img src="./img/voltar.png" alt="Seta esquerda"></a>
+    </div>
 </body>
 </html>
