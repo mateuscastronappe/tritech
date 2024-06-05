@@ -1,14 +1,14 @@
 header {
-    background-color: rgb(6, 66, 111);
+    background-color: #06426f;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 10%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0;
+    padding: 0 20px; 
+    box-sizing: border-box;
 }
 
 .titulo-bem-vindo {
@@ -16,34 +16,82 @@ header {
     text-align: center;
     flex: 1;
     color: white;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
 }
+
 body {
     position: relative;
     height: 100vh;
     margin: 0;
+    display: flex; 
+    flex-direction: column; 
 }
-.lista {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    position: relative;
+}
+
+.retangulo {
+    width: 350px; 
+    height: 720px; 
+    background-color: rgb(6, 66, 111); 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+.titulo-solucoes {
+    position: relative; 
+    z-index: 1; 
+    margin-bottom: 20px; 
+    color: rgb(255, 255, 255);
     font-family: Arial, sans-serif; 
-    font-size: 16px; 
-    font-weight: normal; 
+    font-size: 24px; 
+    font-weight: bold; 
+    text-align: center;
 }
-li img{
+
+.lista {
+    list-style-type: none;
+    padding: 0;
+    position: relative; 
+    z-index: 1; 
+}
+
+.lista li {
+    margin-bottom: 130px;
+}
+
+li img {
     max-width: 80px;
 }
 
 .about {
-    margin: 0 20px;
+    margin:  20px;
 }
 
 .about img {
     height: 50px;
 }
 
-footer{
+footer {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -53,4 +101,54 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .retangulo {
+        width: 200px; 
+        height: 500px; 
+    }
+    .titulo-solucoes {
+        font-size: 20px;
+    }
+    .lista li {
+        margin-bottom: 80px;
+    }
+    li img {
+        max-width: 60px;
+    }
+    header, footer {
+        height: 8%;
+    }
+}
+
+@media (max-width: 480px) {
+    .retangulo {
+        width: 150px; 
+        height: 400px; 
+    }
+    .titulo-solucoes {
+        font-size: 18px;
+    }
+    .lista li {
+        margin-bottom: 50px;
+    }
+    li img {
+        max-width: 50px;
+    }
+    header, footer {
+        height: 7%;
+    }
 }
