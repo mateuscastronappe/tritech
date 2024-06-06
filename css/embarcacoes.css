@@ -1,33 +1,33 @@
 body{
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    min-height: 100vh; /* Altura mínima igual à altura da viewport */
-    margin: 0; /* Remove margens padrão do body */
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh;
+    margin: 0; 
     background-color: slategray;
 }
 #barco {
-    position: relative; /* Define o posicionamento relativo para o contêiner */
+    position: relative; 
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 40%; /* Largura máxima do contêiner */
+    max-width: 40%; 
 }
 
 #barco img {
-    max-width: 100%; /* Torna a imagem responsiva */
-    height: auto; /* Mantém a proporção da imagem */
+    max-width: 100%; 
+    height: auto; 
 }
 
 .titulo-embarcacoes {
-    position: absolute; /* Define o posicionamento absoluto para o título */
-    top: 0; /* Alinha o título no topo do contêiner */
-    left: 0; /* Alinha o título à esquerda do contêiner */
-    width: 100%; /* Largura total do contêiner */
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
     text-align: center;
     background-color: #06426f;
     color: white;
-    padding: 10px; /* Espaçamento interno do título */
-    box-sizing: border-box; /* Inclui o padding no cálculo da largura */
+    padding: 10px; 
+    box-sizing: border-box; 
     font-family: Arial, sans-serif; 
 }
