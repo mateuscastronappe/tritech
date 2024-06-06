@@ -62,13 +62,15 @@ body {
     position: relative;
     margin-top: -30px;
   }
-#voltar {
+  #voltar {
     position: absolute;
-    bottom: 0;
-    left: 20px;
-}
-
-#voltar img {
-    width: 20%; 
+    top: 0;
+    left: 0;
+    z-index: 1; 
+  }
+  
+  #voltar img {
+    width: 15%; 
     height: auto; 
-}
+    margin: 10px; 
+  }
