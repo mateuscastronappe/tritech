@@ -1,9 +1,9 @@
 document.querySelector('.form').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    var nameInput = document.querySelector('input[type="text"]');
-    var emailInput = document.querySelector('input[name="email"]');
-    var messageInput = document.getElementById('message');
+    var nameInput = document.querySelector('#nome');
+    var emailInput = document.querySelector('#email');
+    var messageInput = document.querySelector('#message');
 
     var name = nameInput.value;
     var email = emailInput.value;
