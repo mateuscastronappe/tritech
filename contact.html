@@ -8,22 +8,28 @@
     <title>Fale conosco</title>
 </head>
 <body>
+    <header>
+        <div class="icon-container">
+            <a href="./sobre-nos.html"><img src="./img/about.png" alt="About" class="icon"></a>
+        </div> 
+        <h1 class="titulo-contato">CONTATO</h1>
+    </header>
     <div class="container">
         <form class="form">
-          <div class="descr">Contact us</div>
+          <div class="descr">ENTRE EM CONTATO</div>
           <div class="input">
-              <input required="" autocomplete="off" type="text">
-              <label for="name">Nome</label>
+              <label for="nome">Nome</label>
+              <input required="" autocomplete="off" type="text" id="nome">
           </div>
     
           <div class="input">
-              <input required="" autocomplete="off" name="email" type="text">
               <label for="email">E-mail</label>
+              <input required="" autocomplete="off" type="text" id="email">
           </div>
     
           <div class="input">
-              <textarea required="" cols="30" rows="1" id="message"></textarea>
               <label for="message">Mensagem</label>
+              <textarea required="" cols="30" rows="1" id="message"></textarea>
           </div>
           <button>Enviar mensagem→</button>
         </form>
