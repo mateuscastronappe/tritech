@@ -20,6 +20,8 @@ header {
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
+    font-size: 60px;
+    font-family: Arial, sans-serif; 
 }
 
 body {
@@ -28,6 +30,7 @@ body {
     margin: 0;
     display: flex; 
     flex-direction: column; 
+    background-color: slategray
 }
 
 main {
@@ -48,8 +51,10 @@ main {
 }
 
 .retangulo {
-    width: 350px; 
-    height: 720px; 
+    width: 70vw; 
+    height: 50vh; 
+    max-width: 350px; 
+    max-height: 720px; 
     background-color: rgb(6, 66, 111); 
     position: absolute; 
     top: 50%; 
@@ -60,10 +65,10 @@ main {
 .titulo-solucoes {
     position: relative; 
     z-index: 1; 
-    margin-bottom: 20px; 
+    margin-bottom: 10px; 
     color: rgb(255, 255, 255);
     font-family: Arial, sans-serif; 
-    font-size: 24px; 
+    font-size: 40px; 
     font-weight: bold; 
     text-align: center;
 }
@@ -76,7 +81,9 @@ main {
 }
 
 .lista li {
-    margin-bottom: 130px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: white;
 }
 
 li img {
@@ -101,7 +108,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} 
 
 .icon-container {
     display: flex;
@@ -116,39 +123,39 @@ footer {
 
 /* Media Queries */
 @media (max-width: 768px) {
-    .retangulo {
-        width: 200px; 
-        height: 500px; 
+    .titulo-bem-vindo {
+        font-size: 20px;
     }
+
+    .retangulo {
+        width: 90vw;
+        height: 90vh;
+    }
+
     .titulo-solucoes {
         font-size: 20px;
     }
+
     .lista li {
-        margin-bottom: 80px;
-    }
-    li img {
-        max-width: 60px;
-    }
-    header, footer {
-        height: 8%;
+        margin-bottom: 15px;
     }
 }
 
 @media (max-width: 480px) {
-    .retangulo {
-        width: 150px; 
-        height: 400px; 
+    .titulo-bem-vindo {
+        font-size: 16px;
     }
+
+    .retangulo {
+        width: 85vw;
+        height: 70vh;
+    }
+
     .titulo-solucoes {
         font-size: 18px;
     }
+
     .lista li {
-        margin-bottom: 50px;
-    }
-    li img {
-        max-width: 50px;
-    }
-    header, footer {
-        height: 7%;
+        margin-bottom: 10px;
     }
 }
