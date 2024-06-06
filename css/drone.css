@@ -1,0 +1,20 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh; 
+    margin: 0; 
+    background-color: slategray;
+}
+.titulo-drone{
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    text-align: center;
+    background-color: #06426f;
+    color: white;
+    padding: 10px; 
+    box-sizing: border-box; 
+    font-family: Arial, sans-serif; 
+}
