@@ -1,4 +1,4 @@
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -6,6 +6,7 @@ body{
     margin: 0; 
     background-color: slategray;
 }
+
 .titulo-barreira {
     position: absolute; 
     top: 0; 
@@ -18,4 +19,56 @@ body{
     box-sizing: border-box; 
     font-family: Arial, sans-serif; 
     font-weight: bold; 
+    font-size: 400%;
+}
+
+.container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(2, 100px);
+}
+.img-container {
+    flex-basis: 40%;
+    margin-right: 20px;
+    position: relative;
+    transform: translateY(-170px);
+  }
+
+.img-container img {
+    width: 100%;
+    height: auto;
+    margin-left: 20px;
+}
+
+.texto-container h1 {
+    font-size: 125%; 
+    color: white;
+    margin-top: -20%;
+    font-family: sans-serif;
+}
+.lista-features {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  
+  .lista-features li {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: white;
+  }
+  
+  .texto-container {
+    position: relative;
+    margin-top: -30px;
+  }
+#voltar {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+}
+
+#voltar img {
+    width: 20%; 
+    height: auto; 
 }
