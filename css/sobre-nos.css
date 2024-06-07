@@ -1,102 +1,124 @@
 /*css geral da página*/
 
 body{
-    background-color: white;
+    background-color:  slategray;
 }
 
-*{
+ *{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} 
 
 /*css para o header*/
-
+header {
+    background-color: #06426f;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px; 
+    box-sizing: border-box;
+}
+.titulo-sobrenos {
+    margin: 0;
+    text-align: center;
+    flex: 1;
+    color: white;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-size: 60px;
+    font-family: Arial, sans-serif; 
+}
+#voltar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; 
+  }
+  
+  #voltar img {
+    width: 15%; 
+    height: auto; 
+    margin: 10px; 
+  }
 
 /*css para o conteúdo da página*/
-
-.container img {
-    max-width:200px;
-    max-height:150px;
-    width: auto;
-    height: auto;
+.titulo {
+    font-size: 60px;
+    font-family: Arial, sans-serif;
+    position: absolute; 
+    color: white;
+    top: 15%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 1; 
 }
 
-.section-title{
-    color:#06426f;
-    font-size: 4rem;
-}
-
-.section-subtitle{
-    color: #06426f;
-    font-size: 2rem;
-}
-
-#repositorio{
-    color: #06426f;
-    gap: 20px;
-}
-
-#informacoes{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-}
-
-#infos{
-    width: 100%;
+.container {
     display: flex;
     justify-content: center;
-    gap: 24px;
-    margin-top: 32px;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
 }
 
-.infos-user{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 18px;
-    width: 25%;
-    padding: 5px;
+.card {
+    width: 300px;
+    height: 400px;
     background-color: #06426f;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
 }
 
-.icone{
-    font-size: 3.5rem;
-}
-
-.icone a{
-    text-decoration: none;
-    color: black;
-}
-
-.infos-titulo{
-    color:#06426f;
-    font-size: 1.56rem;
-}
-
-.infos-descricao{
-    color: #1d1d1dad;
-    font-size: 1rem;
-}
-
-.btn-default{
+.image-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 10px 60px;
-    margin: 40px;
-    border-radius: 30px;
-    background-color:#06426f;
-    color: slategray;
-    text-decoration: none;
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
-    transition: background-color .3s ease;
+    margin-bottom: 20px;
 }
 
-.btn-default:hover{
-    background-color:#06426f;
+.image-container img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.nome {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.rm {
+    font-size: 15px;
+    color: #ffffff;
+}
+.email {
+    font-size: 15px;
+    color: #ffffff;
+    padding-top: 20px;
+}
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.social-media a {
+    margin: 10px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
 }
